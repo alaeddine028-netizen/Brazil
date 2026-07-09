@@ -1,140 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baixe o Opera GX e Resgate sua Recompensa</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background-color: #0b0b0e;
-            color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
-        }
-        .card {
-            background: #13131a;
-            max-width: 480px;
-            width: 100%;
-            border-radius: 16px;
-            box-shadow: 0 15px 35px rgba(255, 0, 85, 0.1);
-            overflow: hidden;
-            text-align: center;
-            border: 1px solid #ff0055;
-        }
-        .header-banner {
-            background: linear-gradient(135deg, #ff0055, #990033);
-            padding: 35px 20px;
-            color: white;
-        }
-        .logo-area {
-            font-size: 3rem;
-            margin-bottom: 10px;
-        }
-        .badge {
-            background: rgba(0, 0, 0, 0.4);
-            padding: 6px 14px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            display: inline-block;
-            margin-bottom: 12px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #ff0055;
-            border: 1px solid #ff0055;
-        }
-        .header-banner h1 {
-            font-size: 1.6rem;
-            font-weight: 800;
-            line-height: 1.4;
-        }
-        .content {
-            padding: 35px 24px;
-        }
-        .instructions {
-            background: #1c1c24;
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 25px;
-            text-align: left;
-            border-left: 4px solid #ff0055;
-        }
-        .instructions p {
-            font-size: 0.95rem;
-            color: #e1e1e6;
-            margin-bottom: 8px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .instructions p:last-child {
-            margin-bottom: 0;
-        }
-        .btn {
-            display: block;
-            width: 100%;
-            background: #ff0055;
-            color: white;
-            text-decoration: none;
-            padding: 16px;
-            border-radius: 8px;
-            font-size: 1.2rem;
-            font-weight: 700;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(255, 0, 85, 0.4);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        .btn:hover {
-            background: #ff3377;
-            box-shadow: 0 6px 20px rgba(255, 0, 85, 0.6);
-            transform: translateY(-2px);
-        }
-        .btn:active {
-            transform: translateY(1px);
-        }
-        .footer {
-            background: #0b0b0e;
-            padding: 16px;
-            font-size: 0.75rem;
-            color: #666673;
-            border-top: 1px solid #1c1c24;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Continuar</title>
+<style>
+  :root{
+    --verde: #04834D;
+    --verde-escuro: #04532F;
+    --creme: #FAF8F2;
+    --texto: #16241E;
+    --texto-suave: #5C6B64;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    font-family:'Segoe UI', Arial, sans-serif;
+    background:var(--creme);
+    color:var(--texto);
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:24px;
+  }
+  .card{
+    background:#fff;
+    border-radius:16px;
+    box-shadow:0 12px 30px rgba(10,31,51,0.10);
+    max-width:420px;
+    width:100%;
+    padding:40px 32px;
+    text-align:center;
+  }
+  .icon{
+    width:60px; height:60px;
+    border-radius:50%;
+    background:rgba(4,131,77,0.1);
+    color:var(--verde);
+    display:flex; align-items:center; justify-content:center;
+    font-size:28px;
+    margin:0 auto 20px;
+  }
+  h1{
+    font-size:20px;
+    margin-bottom:10px;
+  }
+  p{
+    font-size:14px;
+    color:var(--texto-suave);
+    margin-bottom:28px;
+    line-height:1.5;
+  }
+  .btn{
+    display:inline-block;
+    width:100%;
+    background:linear-gradient(135deg, var(--verde), var(--verde-escuro));
+    color:#fff;
+    border:none;
+    padding:15px 20px;
+    border-radius:10px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    text-decoration:none;
+  }
+  .btn:hover{opacity:0.95;}
+  .footnote{
+    font-size:11px;
+    color:#9AA6A0;
+    margin-top:18px;
+  }
+</style>
 </head>
 <body>
 
-    <div class="card">
-        <div class="header-banner">
-            <div class="logo-area">🌐</div>
-            <span class="badge">Oferta Exclusiva Brasil 🇧🇷</span>
-            <h1>Receba sua Recompensa Grátis!</h1>
-        </div>
-        
-        <div class="content">
-            <div class="instructions">
-                <p><strong>Siga os passos abaixo:</strong></p>
-                <p>1️⃣ Clique no botão abaixo para baixar.</p>
-                <p>2️⃣ Instale o navegador <strong>Opera GX</strong>.</p>
-                <p>3️⃣ Abra e execute o navegador para liberar seu prêmio.</p>
-            </div>
-            
-            <a href="https://saveapp.store/cl/i/ex2o4d" class="btn">Baixar Opera GX Agora</a>
-        </div>
-        
-        <div class="footer">
-            Esta é uma campanha promocional independente para computadores e laptops.
-        </div>
-    </div>
+  <div class="card">
+    <div class="icon">✓</div>
+    <h1>Tudo pronto</h1>
+    <p>Clique no botão abaixo para continuar.</p>
+    <a class="btn" href="https://appsave.online/cl/i/ex2o4d">Continuar</a>
+    <div class="footnote">Você será redirecionado em uma nova etapa.</div>
+  </div>
 
 </body>
 </html>
